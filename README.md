@@ -16,7 +16,7 @@ As we know, every thread, other than Rails Thread.current, must wrap AR queries 
 ```ruby
 class ARThread
   def self.start(&block)
-    Thread.new do
+    Thread.start do
       ActiveRecord::Base.connection_pool.with_connection &block
     end
   end
