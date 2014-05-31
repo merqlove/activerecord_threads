@@ -1,4 +1,4 @@
-== README
+# README
 
 This is simple rails web app, which shows how to wrap Threads for use ActiveRecord connections inside.
 
@@ -13,13 +13,13 @@ ARThread.start do
 end
 ```
 
-== Run
+## Run
 
 ```
 bundle exec puma
 ```
 
-== Test
+## Test
 
 ```
 ab -n 20 -c 20 http://127.0.0.1:3000/pages
